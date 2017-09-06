@@ -19,10 +19,10 @@ class App extends Component {
     filteredMarkers: [],
     viewport: {
       center: [28.139816, -81.600952],
-      zoom: 8
+      zoom: 12
     },
     currentLocation: [],
-    selectedFilter: 'Accepting People',
+    selectedFilter: 'All Shelters',
     selectedMarker: {},
     toggledInfo: false
   }
@@ -69,7 +69,7 @@ class App extends Component {
       isLoading: false,
       markers: allMarkerData,
       // Accepting shelters set to default
-      filteredMarkers: allMarkerData.filter(marker => (marker.accepting)),
+      filteredMarkers: allMarkerData,
     });
   }
 
